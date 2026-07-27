@@ -16,29 +16,32 @@
         <tr>
             <td id="cookiesPerSecond">Cookies per Second: 0</td>
             <td id="cookieAmount">Cookie Amount: 0</td>
-            <td>
+            <td class="upgrades">
                 <span id="upgrade1Cost">Cost: 50 &emsp;</span>
-                <button onclick="upgrade1()" title="Increases the amount of cookies made per click">Click+</button>
+                <button class="upgradeButton" id="upgrade1" onclick="upgrade1()"
+                    title="Increases the amount of cookies made per click">Click+</button>
             </td>
         </tr>
         <tr>
             <td id="clickAmount">Cookies per Click: 1</td>
             <td>
-                <button onclick="clickCookie()">
+                <button id="cookie" onclick="clickCookie()">
                     <img src="cookie.jpg" alt="cookie">
                 </button>
             </td>
-            <td>
+            <td class="upgrades">
                 <span id="upgrade2Cost">Cost: 500 &emsp;</span>
-                <button onclick="upgrade2()" title="Increases cookies per second by 10">Free Cookies</button>
+                <button class="upgradeButton" id="upgrade2" onclick="upgrade2()"
+                    title="Increases cookies per second by 10">Bakery</button>
             </td>
         </tr>
         <tr>
             <td></td>
             <td></td>
-            <td>
+            <td class="upgrades">
                 <span id="upgrade3Cost">Cost: 2500 &emsp;</span>
-                <button onclick="upgrade3()" title="Increases cookies per second by 30">Auto Cookies</button>
+                <button class="upgradeButton" id="upgrade3" onclick="upgrade3()"
+                    title="Increases cookies per second by 30">Factory</button>
             </td>
         </tr>
     </table>

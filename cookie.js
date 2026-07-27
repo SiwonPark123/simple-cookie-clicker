@@ -8,6 +8,7 @@ var upgradeMult = 1.25;
 var clickAmount = 1;
 var cookiesPerSecond = 0;
 var addCPS;
+var notEnoughCookiesTimer;
 
 
 function clickCookie() {
@@ -35,6 +36,8 @@ function upgrade1() {
         document.getElementById("clickAmount").textContent = "Cookies per Click: " + clickAmount;
         upgrade1Cost = Math.floor(upgrade1Cost * upgradeMult);
         document.getElementById("upgrade1Cost").textContent = "Cost: " + upgrade1Cost + "\u2003";
+    } else {
+        notEnoughCookies("upgrade1");
     }
 }
 
@@ -46,6 +49,8 @@ function upgrade2() {
         upgrade2Cost = Math.floor(upgrade2Cost * upgradeMult);
         document.getElementById("upgrade2Cost").textContent = "Cost: " + upgrade2Cost + "\u2003";
         calculateCookiesPerSecond();
+    } else {
+        notEnoughCookies("upgrade2");
     }
 }
 
@@ -57,5 +62,14 @@ function upgrade3() {
         upgrade3Cost = Math.floor(upgrade3Cost * upgradeMult);
         document.getElementById("upgrade3Cost").textContent = "Cost: " + upgrade3Cost + "\u2003";
         calculateCookiesPerSecond();
+    } else {
+        notEnoughCookies("upgrade3");
     }
+}
+
+function notEnoughCookies(id) {
+    document.getElementById(id).style.borderColor = "red";
+    notEnoughCookiesTimer = setTimeout(() => {
+        document.getElementById(id).style.borderColor = "rgb(136, 136, 116)";
+    }, 1500);
 }

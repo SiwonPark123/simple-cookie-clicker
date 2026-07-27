@@ -1,21 +1,19 @@
 body {
     margin: 0;
-}
-
-table,
-tr,
-th,
-td {
-    border: 1px solid black;
+    font-family: system-ui;
 }
 
 table {
     height: 100vh;
     width: 100vw;
     table-layout: fixed;
+    border-collapse: collapse;
+    background-color: burlywood;
 }
 
 th {
+    border-bottom: 2px solid black;
+    background-color: rgb(150, 75, 0);
     font-size: 40px;
 }
 
@@ -27,7 +25,7 @@ td {
 }
 
 button {
-    background-color: white;
+    border-color: rgb(136, 136, 116);
     font-size: 20px;
     height: 80%;
     width: 50%;
@@ -36,4 +34,17 @@ button {
 img {
     height: 100%;
     width: 100%;
+}
+
+.upgrades {
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+}
+
+.upgradeButton {
+    background-color: beige;
+}
+
+#cookie {
+    background-color: white;
 }
