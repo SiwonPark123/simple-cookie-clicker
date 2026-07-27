@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Cookie Clicker</title>
+    <link rel="styleSheet" type="text/css" href="cookie.css">
+    <script src="cookie.js"></script>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th colspan="3">Cookie Clicker</th>
+        </tr>
+        <tr>
+            <td id="cookiesPerSecond">Cookies per Second: 0</td>
+            <td id="cookieAmount">Cookie Amount: 0</td>
+            <td>
+                <span id="upgrade1Cost">Cost: 50 &emsp;</span>
+                <button onclick="upgrade1()" title="Increases the amount of cookies made per click">Click+</button>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button onclick="clickCookie()">
+                    <img src="cookie.jpg" alt="cookie">
+                </button>
+            </td>
+            <td>
+                <span id="upgrade2Cost">Cost: 500 &emsp;</span>
+                <button onclick="upgrade2()" title="Increases cookies per second by 10">Free Cookies</button>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>
+                <span id="upgrade3Cost">Cost: 2500 &emsp;</span>
+                <button onclick="upgrade3()" title="Increases cookies per second by 30">Auto Cookies</button>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
