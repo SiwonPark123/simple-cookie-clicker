@@ -1,10 +1,10 @@
-var cookieAmount = 3000;
+var cookieAmount = 0;
 var upgrade1Cost = 50;
 var upgrade2Cost = 500;
 var upgrade2Amount = 0;
 var upgrade3Cost = 2500;
 var upgrade3Amount = 0;
-var upgradeMult = 1.5
+var upgradeMult = 1.25;
 var clickAmount = 1;
 var cookiesPerSecond = 0;
 var addCPS;
@@ -32,6 +32,7 @@ function upgrade1() {
         cookieAmount -= upgrade1Cost;
         document.getElementById("cookieAmount").textContent = "Cookie Amount: " + cookieAmount;
         clickAmount++;
+        document.getElementById("clickAmount").textContent = "Cookies per Click: " + clickAmount;
         upgrade1Cost = Math.floor(upgrade1Cost * upgradeMult);
         document.getElementById("upgrade1Cost").textContent = "Cost: " + upgrade1Cost + "\u2003";
     }
