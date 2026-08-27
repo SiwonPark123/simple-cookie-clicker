@@ -10,6 +10,17 @@ var cookiesPerSecond = 0;
 var addCPS;
 var notEnoughCookiesTimer;
 
+const gameState = {
+    cookies: 0,
+    upgrade1Amount: 0,
+    upgrade2Amount: 0,
+    upgrade3Amount: 0,
+    upgrade1Cost: 50,
+    upgrade2Cost: 500,
+    upgrade3Cost: 2500,
+    clickAmount: 1,
+    cookiesPerSecond: 0
+}
 
 function clickCookie() {
     cookieAmount += clickAmount;
