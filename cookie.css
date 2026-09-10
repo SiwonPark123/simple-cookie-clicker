@@ -29,6 +29,8 @@ button {
     font-size: 20px;
     height: 80%;
     width: 50%;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 img {
@@ -43,8 +45,18 @@ img {
 
 .upgradeButton {
     background-color: beige;
+    transition: 0.1s ease;
+}
+
+.upgradeButton:active {
+    transform: scale(1.05);
 }
 
 #cookie {
     background-color: white;
+    transition: 0.1s ease;
+}
+
+#cookie:active {
+    transform: scale(1.05);
 }

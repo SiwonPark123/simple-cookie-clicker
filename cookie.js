@@ -84,10 +84,10 @@ function upgrade3() {
 }
 
 function notEnoughCookies(id) {
-    document.getElementById(id).style.borderColor = "red";
+    document.getElementById(id).style.backgroundColor = "rgba(236, 120, 120, 1)";
     notEnoughCookiesTimer = setTimeout(() => {
-        document.getElementById(id).style.borderColor = "rgb(136, 136, 116)";
-    }, 1500);
+        document.getElementById(id).style.backgroundColor = "beige";
+    }, 750);
 }
 
 function update() {
