@@ -25,6 +25,10 @@ function loadGameState() {
     document.getElementById("upgrade1Cost").textContent = "Cost: " + gameState.upgrade1Cost + "\u2003";
     document.getElementById("upgrade2Cost").textContent = "Cost: " + gameState.upgrade2Cost + "\u2003";
     document.getElementById("upgrade3Cost").textContent = "Cost: " + gameState.upgrade3Cost + "\u2003";
+    addCPS = setInterval(() => {
+        gameState.cookieAmount += gameState.cookiesPerSecond;
+        document.getElementById("cookieAmount").textContent = "Cookie Amount: " + gameState.cookieAmount;
+    }, 1000);
 }
 
 function clickCookie() {
