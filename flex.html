@@ -10,10 +10,10 @@
 <body>
     <div class="container" id="column1">
         <div class="title"></div>
-        <div>Cookies: 0</div>
-        <div>Cookies Per Click: 1</div>
-        <div>Cookies Per Sec: 0</div>
-        <button id="cookie">
+        <div id="cookies">Cookies: 0</div>
+        <div id="cpc">Cookies Per Click: 1</div>
+        <div id="cps">Cookies Per Sec: 0</div>
+        <button id="cookie" onclick="clickCookie()">
             <img src="cookie.png" alt="cookie" draggable="false">
         </button>
     </div>
@@ -25,13 +25,29 @@
     <div class="container" id="column3">
         <div class="title"></div>
         <div>Upgrades</div>
-        <button class="upgradeButton">Click+</button>
-        <button class="upgradeButton">Oven</button>
-        <button class="upgradeButton">Bakery</button>
-        <button class="upgradeButton">Factory</button>
-        <button class="upgradeButton">Company</button>
+        <div class="upgrades">
+            <span id="upgrade1Cost">Cost: 10</span>
+            <button class="upgradeButton" id="upgrade1" onclick="upgrade1()">Click+</button>
+        </div>
+        <div class="upgrades">
+            <span>Cost: 100</span>
+            <button class="upgradeButton" id="upgrade2">Oven</button>
+        </div>
+        <div class="upgrades">
+            <span>Cost: 1000</span>
+            <button class="upgradeButton" id="upgrade3">Bakery</button>
+        </div>
+        <div class="upgrades">
+            <span>Cost: 15000</span>
+            <button class="upgradeButton" id="upgrade4">Factory</button>
+        </div>
+        <div class="upgrades">
+            <span>Cost: 100000</span>
+            <button class="upgradeButton" id="upgrade5">Company</button>
+        </div>
 
     </div>
+    <script src="flex.js"></script>
 </body>
 
 </html>

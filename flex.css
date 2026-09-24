@@ -26,6 +26,10 @@ button {
     transition: 0.1s ease;
 }
 
+span {
+    font-size: 25px;
+}
+
 .container {
     display: flex;
     flex-flow: column wrap;
@@ -33,10 +37,6 @@ button {
     width: calc(100vw/3);
     gap: 5vh;
     border-right: 2px solid rgb(132, 73, 43);
-}
-
-.top {
-    margin-top: 15vh;
 }
 
 .title {
@@ -47,9 +47,14 @@ button {
     border-bottom: 2px solid rgb(117, 62, 35);
 }
 
+.upgrades {
+    margin-top: 3.5vh;
+}
+
 .upgradeButton {
     background-color: rgb(229, 211, 188);
     border: none;
+    font-size: 25px;
 }
 
 #cookie {
@@ -57,16 +62,21 @@ button {
     width: 17.5vw;
     background-color: rgb(243, 224, 183);
     margin-top: 10vh;
+    border-radius: 50%;
     transition: 0.1s ease;
     border: none;
 }
 
-button:active {
+button:hover {
     transform: scale(1.1);
 }
 
+button:active {
+    transform: scale(1);
+}
+
 #save {
-    margin-top: 55vh;
+    margin-top: 50vh;
     background-color: rgb(47, 224, 47);
 }
 
