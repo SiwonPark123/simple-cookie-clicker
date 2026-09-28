@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Cookie Clicker</title>
+    <link rel="styleSheet" type="text/css" href="flex.css">
+</head>
+
+<body>
+    <div class="container" id="column1">
+        <div class="title"></div>
+        <div id="cookies">Cookies: 0</div>
+        <div id="cpc">Cookies Per Click: 1</div>
+        <div id="cps">Cookies Per Sec: 0</div>
+        <button id="cookie" onclick="clickCookie()">
+            <img src="cookie.png" alt="cookie" draggable="false">
+        </button>
+    </div>
+    <div class="container">
+        <div class="title">Cookie Clicker</div>
+        <button id="save" onclick="save()">Save</button>
+        <button id="reset" onclick="resetCheck()">Reset</button>
+    </div>
+    <div class="container" id="column3">
+        <div class="title"></div>
+        <div>Upgrades</div>
+        <div class="upgrades">
+            <span id="upgrade1Cost">Cost: 50</span>
+            <button class="upgradeButton" id="upgrade1" onclick="upgrade1()">Oven</button>
+        </div>
+        <div class="upgrades">
+            <span id="upgrade2Cost">Cost: 1000</span>
+            <button class="upgradeButton" id="upgrade2" onclick="upgrade2()">Home</button>
+        </div>
+        <div class="upgrades">
+            <span id="upgrade3Cost">Cost: 10000</span>
+            <button class="upgradeButton" id="upgrade3" onclick="upgrade3()">Bakery</button>
+        </div>
+        <div class="upgrades">
+            <span id="upgrade4Cost">Cost: 100000</span>
+            <button class="upgradeButton" id="upgrade4" onclick="upgrade4()">Factory</button>
+        </div>
+        <div class="upgrades">
+            <span id="upgrade5Cost">Cost: 1000000</span>
+            <button class="upgradeButton" id="upgrade5" onclick="upgrade5()">Company</button>
+        </div>
+    </div>
+    <button id="resetConfirm" onclick="fullReset()">Are You Sure?</button>
+    <script src="flex.js"></script>
+</body>
+
+</html>
