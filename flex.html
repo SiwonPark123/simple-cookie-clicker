@@ -19,34 +19,34 @@
     </div>
     <div class="container">
         <div class="title">Cookie Clicker</div>
-        <button id="save">Save</button>
-        <button id="reset">Reset</button>
+        <button id="save" onclick="save()">Save</button>
+        <button id="reset" onclick="resetCheck()">Reset</button>
     </div>
     <div class="container" id="column3">
         <div class="title"></div>
         <div>Upgrades</div>
         <div class="upgrades">
-            <span id="upgrade1Cost">Cost: 10</span>
-            <button class="upgradeButton" id="upgrade1" onclick="upgrade1()">Click+</button>
+            <span id="upgrade1Cost">Cost: 50</span>
+            <button class="upgradeButton" id="upgrade1" onclick="upgrade1()">Oven</button>
         </div>
         <div class="upgrades">
-            <span>Cost: 100</span>
-            <button class="upgradeButton" id="upgrade2">Oven</button>
+            <span id="upgrade2Cost">Cost: 1000</span>
+            <button class="upgradeButton" id="upgrade2" onclick="upgrade2()">Home</button>
         </div>
         <div class="upgrades">
-            <span>Cost: 1000</span>
-            <button class="upgradeButton" id="upgrade3">Bakery</button>
+            <span id="upgrade3Cost">Cost: 10000</span>
+            <button class="upgradeButton" id="upgrade3" onclick="upgrade3()">Bakery</button>
         </div>
         <div class="upgrades">
-            <span>Cost: 15000</span>
-            <button class="upgradeButton" id="upgrade4">Factory</button>
+            <span id="upgrade4Cost">Cost: 100000</span>
+            <button class="upgradeButton" id="upgrade4" onclick="upgrade4()">Factory</button>
         </div>
         <div class="upgrades">
-            <span>Cost: 100000</span>
-            <button class="upgradeButton" id="upgrade5">Company</button>
+            <span id="upgrade5Cost">Cost: 1000000</span>
+            <button class="upgradeButton" id="upgrade5" onclick="upgrade5()">Company</button>
         </div>
-
     </div>
+    <button id="resetConfirm" onclick="fullReset()">Are You Sure?</button>
     <script src="flex.js"></script>
 </body>
 

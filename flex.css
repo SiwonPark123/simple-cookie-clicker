@@ -68,7 +68,7 @@ span {
 }
 
 button:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 button:active {
@@ -82,6 +82,14 @@ button:active {
 
 #reset {
     margin-top: 3vh;
+    background-color: rgb(193, 16, 16);
+}
+
+#resetConfirm {
+    position: absolute;
+    top: 83.25vh;
+    left: 79.625vh;
+    display: none;
     background-color: rgb(193, 16, 16);
 }
 
